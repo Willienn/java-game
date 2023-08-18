@@ -1,0 +1,15 @@
+package main;
+
+import javax.swing.*;
+
+public class GameWindow extends JFrame {
+    public GameWindow(GamePanel gamePanel) {
+        JFrame jframe = new JFrame();
+        jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jframe.add(gamePanel);
+        jframe.setLocationRelativeTo(null);
+        jframe.pack();
+        jframe.setResizable(false);
+        jframe.setVisible(true);
+    }
+}
