@@ -85,4 +85,8 @@ public class Game implements Runnable {
             }
         }
     }
+
+    public void windowLostFocus() {
+        player.resetDirBools();
+    }
 }
